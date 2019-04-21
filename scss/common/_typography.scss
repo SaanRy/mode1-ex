@@ -1,0 +1,16 @@
+h1 {
+    @include page-title(bold, 48px);
+    letter-spacing: 4.8px;
+    text-transform: uppercase;
+
+}
+
+h2 {
+    @include page-title(400, 36px);
+    font-family: $font-aleo;
+}
+
+
+h3 {
+    @include page-title(400, 20px);
+}

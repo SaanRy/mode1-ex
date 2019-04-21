@@ -1,0 +1,39 @@
+.hero {
+
+    background-image: url('#{$path-img}/hero-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 268px 0 136px;
+
+
+
+
+
+    &__title {
+        margin-bottom: 19px;
+    }
+
+    &__subtitle {
+        font-size: 22px;
+        margin-bottom: 54px;
+        letter-spacing: 6.82px;
+    }
+
+
+    &__scroll {
+        display: flex;
+        margin: auto;
+        flex-direction: column;
+        font-size: 14px;
+        letter-spacing: 2.8px;
+        color: $color-white;
+        margin-top: 121px;
+
+        img {
+            display: block;
+            padding-top: 15px;
+        }
+
+    }
+}

@@ -1,0 +1,39 @@
+.country {
+
+
+    padding: 236px 0 150px;
+
+    &__box {
+        background-color: $color-shadow;
+        text-align: left;
+        padding: 50px 30px;
+    }
+
+    &__name {
+
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        margin-bottom: 30px;
+
+
+    }
+
+    &__title {
+
+        margin-bottom: 30px;
+    }
+
+    &__des {
+
+        margin-bottom: 48px;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+
+    
+}

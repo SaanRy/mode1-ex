@@ -1,0 +1,39 @@
+.footer {
+    padding: 120px 0 50px;
+    margin: 0 auto;
+    background-color: $color-darck-gray;
+    display: flex;
+    flex-direction: column;
+
+    &__logo {
+        font-size: 24px;
+        color: $color-white;
+        text-transform: uppercase;
+        letter-spacing: 3.36px;
+    }
+
+    &__qouat {
+        letter-spacing: 1.6px;
+        margin-bottom: 30px;
+    }
+}
+
+.social {
+    &__list {
+        display: flex;
+        margin: auto;
+    }
+
+    &__item {
+        font-size: 16px;
+        color: $color-white;
+
+        &:not(:last-child) {
+            margin-right: 25px;
+        }
+        &:hover a{
+            color: $color-blue;
+            
+        }
+    }
+}

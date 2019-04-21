@@ -1,0 +1,47 @@
+.comment {
+
+    background-image: url('#{$path-img}/comments-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding: 120px 0 200px;
+
+    &__box {
+        background-color: $color-darck-gray;
+        text-align: left;
+        display: flex;
+    }
+
+    &__title {
+        margin-bottom: 95px;
+    }
+
+    &__text {
+        width: 60%;
+        color: $color-ligth-gray;
+        padding: 52px 60px;
+    }
+
+    &__des {
+        display: flex;
+        margin-bottom: 35px;
+
+
+        i {
+            float: left;
+            font-size: 36px;
+            color: $color-blue;
+
+            &:after {
+                content: '';
+                display: block;
+                clear: both;
+            }
+        }
+
+        p {
+            float: right;
+        }
+    }
+}

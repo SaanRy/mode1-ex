@@ -1,0 +1,39 @@
+.howto {
+
+    background-color: $color-darck-gray;
+
+
+
+    padding: 36px 0 100px;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        font-family: $font-aleo;
+    }
+
+    &__box {
+
+        display: flex;
+        justify-content: space-between;
+        padding: 0 145px;
+    }
+
+    &__spacer {
+        width: 296px;
+        height: 113px;
+        position: relative;
+        overflow: hidden;
+        margin: 0 5px;
+    }
+
+    &__devider {
+        width: 370px;
+        height: 250px;
+        border: 2px dotted gray;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: -12%;
+    }
+
+}

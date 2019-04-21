@@ -1,0 +1,39 @@
+.about {
+    text-align: left;
+    background-image: url('#{$path-img}/about-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 120px 0;
+
+
+    &__title {
+        font-family: $font-aleo;
+        margin-bottom: 60px;
+        padding-top: 85px;
+    }
+
+    &__text {
+        color: $color-ligth-gray;
+        font-size: 16px;
+
+        p:not(:last-child) {
+            margin-bottom: 37px;
+        }
+
+        margin-bottom: 48px;
+    }
+
+
+    &__img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        &:first-child {
+            margin-right: 125px;
+            padding-bottom: 5px;
+
+        }
+    }
+}

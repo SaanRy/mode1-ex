@@ -8,3 +8,85 @@
 *:before {
     box-sizing: border-box;
 }
+
+body {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.625;
+    color: $color-white;
+    font-family: $font-josefin;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: $color-white;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.border {
+    border: 15px solid $color-white;
+}
+
+.grid {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+}
+
+.col-1-2 {
+    width: 50%;
+    padding: 15px;
+
+    &--rigth {
+        float: right;
+
+    }
+
+    &--left {
+        float: left;
+
+    }
+
+}
+
+.col-1-3 {
+    width: 33.3333333%;
+    padding: 15px;
+
+}
+
+.btn {
+    width: 255px;
+    height: 60px;
+    background-color: $color-blue;
+    font-size: 16px;
+    font-family: $font-aleo;
+    text-transform: uppercase;
+
+    &__link {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: $color-white;
+        background: linear-gradient(45deg, rgba(73, 107, 254, 1) 0%, rgba(73, 107, 254, 1) 40%, rgba(73, 107, 254, 0) 41%);
+
+    }
+
+
+
+}

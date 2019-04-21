@@ -1,0 +1,5 @@
+@mixin page-title($font-w, $font-size)
+{
+    font-weight: $font-w;
+    font-size: $font-size;
+}
