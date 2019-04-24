@@ -1,14 +1,14 @@
 .howto {
 
     background-color: $color-darck-gray;
+    margin-top: -40px;
+    padding: 75px 0 88px;
 
-
-
-    padding: 36px 0 100px;
     &__list {
         display: flex;
         justify-content: space-between;
         font-family: $font-aleo;
+        margin: 0 -15px;
     }
 
     &__box {
@@ -16,6 +16,8 @@
         display: flex;
         justify-content: space-between;
         padding: 0 145px;
+        img {
+            margin-top: 22px;}
     }
 
     &__spacer {
@@ -23,7 +25,7 @@
         height: 113px;
         position: relative;
         overflow: hidden;
-        margin: 0 5px;
+        margin-top: -26px;
     }
 
     &__devider {

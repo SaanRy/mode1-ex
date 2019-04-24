@@ -4,17 +4,19 @@
     background-color: $color-darck-gray;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
 
     &__logo {
         font-size: 24px;
         color: $color-white;
         text-transform: uppercase;
-        letter-spacing: 3.36px;
+        letter-spacing: 2.86px;
     }
 
     &__qouat {
-        letter-spacing: 1.6px;
-        margin-bottom: 30px;
+        letter-spacing: 0.6px;
+        margin-bottom: 19px;
     }
 }
 

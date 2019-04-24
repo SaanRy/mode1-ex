@@ -9,31 +9,42 @@
 
     &__title {
         font-family: $font-aleo;
-        margin-bottom: 60px;
+        margin-bottom: 45px;
         padding-top: 85px;
     }
 
     &__text {
         color: $color-ligth-gray;
         font-size: 16px;
+        letter-spacing: 0.4px;
 
         p:not(:last-child) {
-            margin-bottom: 37px;
+            margin-bottom: 29px;
         }
 
-        margin-bottom: 48px;
+        margin-bottom: 43px;
     }
 
 
-    &__img {
+    &__galery {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
+        font-size: 0;
+
+        margin: 15px -30px;
+
+    }
+
+    &__img {
+        margin-bottom: 5px;
 
         &:first-child {
             margin-right: 125px;
-            padding-bottom: 5px;
-
         }
     }
+
+
+
+
 }
