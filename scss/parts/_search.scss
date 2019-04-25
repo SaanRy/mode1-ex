@@ -35,8 +35,14 @@
             padding-right: 14px;
         }
 
+        &:hover {
+            color: $color-blue;
+            background-color: $color-white;
+        }
 
-
+        &:hover svg {
+            fill: $color-blue;
+        }
     }
 
     &__icon {

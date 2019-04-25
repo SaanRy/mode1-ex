@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all .1s ease-in;
 }
 
 *:after,
@@ -67,28 +68,5 @@ ul {
 .col-1-3 {
     width: 33.3333333%;
     padding: 15px;
-
-}
-
-.btn {
-    width: 222px;
-    height: 60px;
-    background-color: $color-blue;
-    font-size: 18px;
-    font-family: $font-aleo;
-    text-transform: uppercase;
-
-    &__link {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        color: $color-white;
-        background: linear-gradient(45deg, rgba(73, 107, 254, 1) 0%, rgba(73, 107, 254, 1) 40%, rgba(73, 107, 254, 0) 41%);
-
-    }
-
-
 
 }

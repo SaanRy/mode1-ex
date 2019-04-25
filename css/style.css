@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all .1s ease-in;
 }
 
 *:after,
@@ -66,31 +67,6 @@ ul {
   padding: 15px;
 }
 
-.btn {
-  width: 222px;
-  height: 60px;
-  background-color: #5474fd;
-  font-size: 18px;
-  font-family: "Aleo", serif;
-  text-transform: uppercase;
-}
-
-.btn__link {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 100%;
-  color: #ffffff;
-  background: linear-gradient(45deg, #496bfe 0%, #496bfe 40%, rgba(73, 107, 254, 0) 41%);
-}
-
 h1 {
   font-weight: bold;
   font-size: 48px;
@@ -115,6 +91,7 @@ h3 {
   background-repeat: no-repeat;
   background-position: center;
   padding: 268px 0 136px;
+  min-height: 100vh;
 }
 
 .hero__title {
@@ -214,6 +191,15 @@ h3 {
   padding-right: 14px;
 }
 
+.search__btn:hover {
+  color: #5474fd;
+  background-color: #ffffff;
+}
+
+.search__btn:hover svg {
+  fill: #5474fd;
+}
+
 .search__icon {
   fill: #ffffff;
   fill-rule: evenodd;
@@ -227,6 +213,7 @@ h3 {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 5px 0;
 }
 
 .nav__box {
@@ -243,10 +230,18 @@ h3 {
 }
 
 .nav__logo {
+  margin-left: -15px;
   font-size: 24px;
-  letter-spacing: 2.4px;
+  letter-spacing: 1.5px;
   text-transform: uppercase;
   text-align: left;
+  float: left;
+}
+
+.nav__logo:after {
+  display: block;
+  content: '';
+  clear: both;
 }
 
 .nav__list {
@@ -257,6 +252,22 @@ h3 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   text-transform: uppercase;
+  margin-right: -15px;
+}
+
+.nav__item {
+  font-size: 14px;
+  position: relative;
+}
+
+.nav__item:hover:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  border: 2px solid #ffffff;
 }
 
 .nav__link {
@@ -421,7 +432,7 @@ h3 {
   float: right;
   width: 59%;
   color: #e8e8e8;
-  padding: 45px 54px 23px 50px;
+  padding: 45px 54px 19px 50px;
 }
 
 .comment__img {
@@ -434,6 +445,11 @@ h3 {
   text-transform: uppercase;
   margin-bottom: 35px;
   letter-spacing: -1px;
+}
+
+.comment__des {
+  font-size: 15.5px;
+  letter-spacing: -0.9px;
 }
 
 .comment__des i {
@@ -501,6 +517,40 @@ h3 {
 
 .social__item:hover a {
   color: #5474fd;
+}
+
+.btn {
+  width: 222px;
+  height: 60px;
+  background-color: #5474fd;
+  font-size: 18px;
+  font-family: "Aleo", serif;
+  text-transform: uppercase;
+}
+
+.btn__link {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background: linear-gradient(45deg, #496bfe 0%, #496bfe 40%, rgba(73, 107, 254, 0) 41%);
+}
+
+.btn:hover {
+  background-color: #ffffff;
+}
+
+.btn:hover .btn__link {
+  color: #5474fd;
+  background: linear-gradient(135deg, #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
 }
 
 /*# sourceMappingURL=style.css.map */

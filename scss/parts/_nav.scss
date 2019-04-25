@@ -2,7 +2,7 @@
     background-color: $color-blue;
     display: flex;
     justify-content: space-between;
-
+    padding: 5px 0;
     &__box {
         display: flex;
         justify-content: space-between;
@@ -11,16 +11,42 @@
     }
 
     &__logo {
+        margin-left: -15px;
         font-size: 24px;
-        letter-spacing: 2.4px;
+        letter-spacing: 1.5px;
         text-transform: uppercase;
         text-align: left;
+        float: left;
+
+        &:after {
+            display: block;
+            content: '';
+            clear: both;
+        }
     }
 
     &__list {
         display: flex;
         justify-content: space-between;
         text-transform: uppercase;
+        margin-right: -15px;
+    }
+
+    &__item {
+        font-size: 14px;
+        position: relative;
+
+        &:hover:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: -5px;
+            left: 0;
+            width: 100%;
+            border: 2px solid $color-white;
+
+
+        }
     }
 
     &__link {
